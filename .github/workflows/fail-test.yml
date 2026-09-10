@@ -1,0 +1,8 @@
+   name: Test Fail Workflow
+   on: [push]
+   jobs:
+     fail-job:
+       runs-on: ubuntu-latest
+       steps:
+         - name: This will fail
+           run: exit 1
